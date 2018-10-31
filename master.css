@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Starjedi';
+  src: url('./fonts/Starjedi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Starjhol';
+  src: url('./fonts/Starjhol.ttf') format('truetype');
+}
+
+h1{
+  font-family: Starjhol;
+  letter-spacing: 5px;
+  font-size: 5em;
+  color: #EEDB00;
+  text-align: center;
+  margin-top: 300px;
+}
+
+h3{
+  font-family: Starjedi;
+  letter-spacing: 4px;
+  color: white;
+}
+
+header {
+    background-color:rgba(33, 33, 33, 0.9);
+    color:#ffffff;
+    display:block;
+    height:50px;
+    position:relative;
+    z-index:5;
+}
+
+header h2{
+    font-size: 22px;
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 80%;
+    text-align: center;
+}
+header a, a:visited {
+    text-decoration:none;
+    color:#fcfcfc;
+}

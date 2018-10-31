@@ -1,10 +1,8 @@
-const fetchData = async () => {
-  const res = await fetch("https://swapi.co/api/people/")
+const fetchData = async (url) => {
+  const res = await fetch(url)
   const json = await res.json()
   loadPeople(json);
 }
-
-fetchData();
 
 const ul = document.querySelector("ul");
 
