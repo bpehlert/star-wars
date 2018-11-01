@@ -23,23 +23,35 @@ h3{
   color: white;
 }
 
-header {
-    background-color:rgba(33, 33, 33, 0.9);
-    color:#ffffff;
-    display:block;
-    height:50px;
-    position:relative;
-    z-index:5;
+.container{
+  width: 80%;
+  margin: 0 auto;
+  position:relative;
+  z-index:5;
 }
 
-header h2{
-    font-size: 22px;
-    margin: 0 auto;
-    padding: 10px 0;
-    width: 80%;
-    text-align: center;
+.logo{
+  float: left;
 }
-header a, a:visited {
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Arial'
+}
+
+nav ul{
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+nav a, a:visited {
     text-decoration:none;
     color:#fcfcfc;
 }
