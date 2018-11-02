@@ -1,16 +1,30 @@
 const fetchData = async (url) => {
-  const res = await fetch(url)
-  const json = await res.json()
-  loadPeople(json);
+  let res = await fetch(url)
+  let json = await res.json();
+  return json;
 }
 
-const ul = document.querySelector("ul");
+const ul = document.querySelector("#contactsList");
 
-const loadPeople = (json) => {
-  let results = json.results;
-  results.forEach(person => {
+const loadContacts = () => {
+  let page = 1;
+  for (var i = 1; i < 10; i++) {
+    let url = `https://swapi.co/api/people/?page=${page}`
+    fetchData(url).then(json => {
+      addToDom(json.results);
+      page++;
+    });
+  };
+};
+
+
+const addToDom = (json) => {
+  console.log(json);
+  json.forEach(person => {
     let li = document.createElement("li");
     li.appendChild(document.createTextNode(person.name));
     ul.appendChild(li);
   });
 };
+
+loadContacts();
