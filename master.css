@@ -1,47 +1,54 @@
 @font-face {
-  font-family: 'Starjedi';
-  src: url('./fonts/Starjedi.ttf') format('truetype');
+  font-family: "Starjedi";
+  src: url("./fonts/Starjedi.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Starjhol';
-  src: url('./fonts/Starjhol.ttf') format('truetype');
+  font-family: "Starjhol";
+  src: url("./fonts/Starjhol.ttf") format("truetype");
 }
 
-h1{
+input {
+  display: block;
+  margin: 0 auto;
+  font-family: "Arial";
+  font-size: 1em;
+}
+
+h1 {
   font-family: Starjhol;
   letter-spacing: 5px;
-  color: #EEDB00;
+  color: #eedb00;
   text-align: center;
   margin-top: 100px;
 }
 
-#title{
+#title {
   margin-top: 300px;
   font-size: 5em;
 }
 
-h3{
+h3 {
   font-family: Starjedi;
   letter-spacing: 4px;
   color: white;
 }
 
-ul{
+ul {
   color: white;
   list-style: none;
-  font-family: 'Arial'
-
+  font-family: "Arial";
+  color: #eedb00;
 }
 
-.container{
+.container {
   width: 80%;
   margin: 0 auto;
-  position:relative;
-  z-index:5;
+  position: relative;
+  z-index: 5;
 }
 
-.logo{
+.logo {
   float: left;
 }
 
@@ -49,10 +56,10 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-family: 'Arial'
+  font-family: "Arial";
 }
 
-nav ul{
+nav ul {
   float: right;
 }
 
@@ -62,7 +69,8 @@ nav li {
   padding-top: 30px;
 }
 
-nav a, a:visited {
-    text-decoration:none;
-    color:#fcfcfc;
+nav a,
+a:visited {
+  text-decoration: none;
+  color: #fcfcfc;
 }
